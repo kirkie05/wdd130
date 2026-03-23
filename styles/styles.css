@@ -1,3 +1,11 @@
+/* Universal Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navigation */
 nav {
     background-color: darkblue;
     padding: 10px;
@@ -9,14 +17,18 @@ nav a {
     padding: 20px;
 }
 
+/* Layout */
+main {
+    max-width: 840px;
+    margin: auto;
+}
+
+/* Heading */
 h1 {
     color: darkblue;
 }
 
-main {
-    max-width: 840px;
-}
-
+/* Profile Image */
 main img {
     width: 150px;
     height: auto;
@@ -25,6 +37,12 @@ main img {
     box-shadow: 0 0 30px gray;
 }
 
+/* Paragraph */
+p {
+    padding: 0;
+}
+
+/* Aside */
 aside {
     width: 20rem;
     margin: 1rem;
@@ -35,15 +53,13 @@ aside {
     text-align: center;
 }
 
+/* Aside Image */
 aside img {
     width: 200px;
     height: auto;
 }
 
-p {
-    padding: 0;
-}
-
+/* Footer */
 footer {
     margin-top: 15px;
     border-top: 1px solid #000;
