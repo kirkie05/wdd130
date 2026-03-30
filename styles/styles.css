@@ -1,11 +1,15 @@
-/* RESET */
+/* =========================
+   RESET
+========================= */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* PAGE WIDTH CONTROL */
+/* =========================
+   PAGE WIDTH CONTROL
+========================= */
 header,
 .grid,
 footer {
@@ -13,7 +17,9 @@ footer {
     margin: 0 auto;
 }
 
-/* NAVIGATION - FLEXBOX */
+/* =========================
+   NAVIGATION (FLEXBOX)
+========================= */
 nav {
     background-color: steelblue;
     padding: 1rem;
@@ -32,21 +38,31 @@ nav a {
     color: white;
 }
 
-/* GRID LAYOUT */
+/* =========================
+   GRID LAYOUT (FIXED)
+========================= */
 .grid {
     display: grid;
-    align-items: center;
+    grid-template-columns: 1fr 2fr;
+    /* KEY FIX */
+    gap: 1rem;
+    align-items: start;
 }
 
-/* MAIN CONTENT */
+/* =========================
+   MAIN CONTENT
+========================= */
 main {
     grid-column: 2 / 3;
     margin: 1rem;
-    max-width: 840px;
 }
 
-/* ASIDE */
+/* =========================
+   ASIDE (LEFT SIDE)
+========================= */
 aside {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
     width: 20rem;
     margin: 1rem;
     padding: 1rem;
@@ -54,8 +70,6 @@ aside {
     background-color: #eee;
     color: #333;
     text-align: center;
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
 }
 
 /* ASIDE IMAGE */
@@ -64,7 +78,9 @@ aside img {
     height: auto;
 }
 
-/* PROFILE IMAGE */
+/* =========================
+   PROFILE IMAGE
+========================= */
 main img {
     width: 150px;
     height: auto;
@@ -73,19 +89,25 @@ main img {
     box-shadow: 0 0 30px gray;
 }
 
-/* HEADING */
+/* =========================
+   HEADING
+========================= */
 h1 {
     color: steelblue;
     border-bottom: 2px solid #000;
     margin-bottom: 10px;
 }
 
-/* PARAGRAPH */
+/* =========================
+   PARAGRAPH
+========================= */
 p {
     padding: 0;
 }
 
-/* FOOTER */
+/* =========================
+   FOOTER
+========================= */
 footer {
     margin-top: 15px;
     border-top: 1px solid #000;
