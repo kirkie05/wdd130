@@ -1,34 +1,70 @@
-/* Universal Reset */
+/* RESET */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Navigation */
-nav {
-    background-color: darkblue;
-    padding: 10px;
-}
-
-nav a {
-    color: white;
-    display: block;
-    padding: 20px;
-}
-
-/* Layout */
-main {
+/* PAGE WIDTH CONTROL */
+header,
+.grid,
+footer {
     max-width: 840px;
-    margin: auto;
+    margin: 0 auto;
 }
 
-/* Heading */
-h1 {
-    color: darkblue;
+/* NAVIGATION - FLEXBOX */
+nav {
+    background-color: steelblue;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
-/* Profile Image */
+/* NAV LINKS */
+nav a {
+    display: block;
+    padding: 0.5rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: white;
+}
+
+/* GRID LAYOUT */
+.grid {
+    display: grid;
+    align-items: center;
+}
+
+/* MAIN CONTENT */
+main {
+    grid-column: 2 / 3;
+    margin: 1rem;
+    max-width: 840px;
+}
+
+/* ASIDE */
+aside {
+    width: 20rem;
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid rgb(0 0 0 / 0.2);
+    background-color: #eee;
+    color: #333;
+    text-align: center;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+/* ASIDE IMAGE */
+aside img {
+    width: 200px;
+    height: auto;
+}
+
+/* PROFILE IMAGE */
 main img {
     width: 150px;
     height: auto;
@@ -37,29 +73,19 @@ main img {
     box-shadow: 0 0 30px gray;
 }
 
-/* Paragraph */
+/* HEADING */
+h1 {
+    color: steelblue;
+    border-bottom: 2px solid #000;
+    margin-bottom: 10px;
+}
+
+/* PARAGRAPH */
 p {
     padding: 0;
 }
 
-/* Aside */
-aside {
-    width: 20rem;
-    margin: 1rem;
-    border: 1px solid rgb(0 0 0 / 0.2);
-    padding: 1rem;
-    background-color: #eee;
-    color: #333;
-    text-align: center;
-}
-
-/* Aside Image */
-aside img {
-    width: 200px;
-    height: auto;
-}
-
-/* Footer */
+/* FOOTER */
 footer {
     margin-top: 15px;
     border-top: 1px solid #000;
