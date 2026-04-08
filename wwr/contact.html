@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+      content="Contact White Water Rafting Company for inquiries, reservations, and adventure bookings.">
+    <meta name="author" content="Emmanuel Isaac">
+    <title>Contact Us | White Water Rafting Company</title>
+
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+
+<body>
+
+    <header>
+        <img src="images/z-crossedoars.jpeg" alt="Rafting Company Logo">
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Company Info -->
+        <section class="contact-info">
+            <h1>White Water Rafting Company</h1>
+            <p>123 Main River Street</p>
+            <p>Kolob, California</p>
+            <p>+1 999 999 9999</p>
+            <p>info@whitewater.com</p>
+        </section>
+
+        <!-- Map + Form -->
+        <section class="contact-grid">
+
+            <!-- MAP -->
+            <div class="map">
+                <iframe src="https://www.google.com/maps?q=Kolob,California&output=embed"
+                  loading="lazy"></iframe>
+            </div>
+
+            <!-- FORM -->
+            <form>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <p>Message Purpose</p>
+
+                <label><input type="radio" name="purpose" value="general" required> General
+                    Inquiry</label>
+                <label><input type="radio" name="purpose" value="reservation"> Reservation
+                    Question</label>
+                <label><input type="radio" name="purpose" value="suggestion"> Website
+                    Suggestion</label>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4"></textarea>
+
+                <label>
+                    <input type="checkbox" name="subscribe">
+                    Please subscribe me to the monthly newsletter
+                </label>
+
+                <button type="submit">Get in Touch!</button>
+            </form>
+
+        </section>
+
+        <!-- EMPLOYEES -->
+        <section class="employees">
+            <h2>We Are Here to Serve You</h2>
+
+            <div class="employee-grid">
+                <figure>
+                    <img src="images/rafting18_600.jpg" alt="Lead Guide">
+                    <figcaption>Lead Guide</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/rafting-home.jpg" alt="Senior Instructor">
+                    <figcaption>Senior Instructor</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/rafting18_600.jpg" alt="Trip Coordinator">
+                    <figcaption>Trip Coordinator</figcaption>
+                </figure>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 White Water Rafting Company ❖ Emmanuel Isaac</p>
+
+        <nav class="socialmedia">
+            <a href="#"><img src="images/facebook.svg" alt="Facebook"></a>
+            <a href="#"><img src="images/instagram.svg" alt="Instagram"></a>
+            <a href="#"><img src="images/linkedin.svg" alt="LinkedIn"></a>
+        </nav>
+    </footer>
+
+</body>
+
+</html>
