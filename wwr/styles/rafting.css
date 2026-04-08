@@ -30,7 +30,7 @@ footer {
     margin: 0 auto;
 }
 
-/* HEADER GRID */
+/* HEADER */
 header {
     display: grid;
     grid-template-columns: auto 1fr;
@@ -39,7 +39,7 @@ header {
     padding: 10px;
 }
 
-/* NAV FLEX */
+/* NAV */
 nav ul {
     list-style: none;
     display: flex;
@@ -48,7 +48,8 @@ nav ul {
 }
 
 nav a {
-    color: var(--accent2-color);
+    color: white;
+    /* FIXED contrast */
     text-decoration: none;
     font-weight: bold;
 }
@@ -59,7 +60,7 @@ nav a {
     margin: 20px 0;
 }
 
-/* GRID LAYOUT */
+/* GRID */
 .contact-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;

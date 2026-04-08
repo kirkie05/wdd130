@@ -29,7 +29,7 @@
 
     <main>
 
-        <!-- Company Info -->
+        <!-- COMPANY INFO -->
         <section class="contact-info">
             <h1>White Water Rafting Company</h1>
             <p>123 Main River Street</p>
@@ -38,7 +38,7 @@
             <p>info@whitewater.com</p>
         </section>
 
-        <!-- Map + Form -->
+        <!-- MAP + FORM -->
         <section class="contact-grid">
 
             <!-- MAP -->
@@ -49,30 +49,46 @@
 
             <!-- FORM -->
             <form>
+
+                <!-- NAME -->
                 <label for="name">Name</label>
                 <input type="text" id="name" name="name" required>
 
+                <!-- EMAIL -->
                 <label for="email">Email</label>
                 <input type="email" id="email" name="email" required>
 
+                <!-- PURPOSE -->
                 <p>Message Purpose</p>
 
-                <label><input type="radio" name="purpose" value="general" required> General
-                    Inquiry</label>
-                <label><input type="radio" name="purpose" value="reservation"> Reservation
-                    Question</label>
-                <label><input type="radio" name="purpose" value="suggestion"> Website
-                    Suggestion</label>
+                <label for="general">
+                    <input type="radio" id="general" name="purpose" value="general" required>
+                    General Inquiry
+                </label>
 
+                <label for="reservation">
+                    <input type="radio" id="reservation" name="purpose" value="reservation">
+                    Reservation Question
+                </label>
+
+                <label for="suggestion">
+                    <input type="radio" id="suggestion" name="purpose" value="suggestion">
+                    Website Suggestion
+                </label>
+
+                <!-- MESSAGE -->
                 <label for="message">Message</label>
                 <textarea id="message" name="message" rows="4"></textarea>
 
-                <label>
-                    <input type="checkbox" name="subscribe">
+                <!-- CHECKBOX -->
+                <label for="subscribe">
+                    <input type="checkbox" id="subscribe" name="subscribe">
                     Please subscribe me to the monthly newsletter
                 </label>
 
+                <!-- BUTTON -->
                 <button type="submit">Get in Touch!</button>
+
             </form>
 
         </section>
@@ -82,6 +98,7 @@
             <h2>We Are Here to Serve You</h2>
 
             <div class="employee-grid">
+
                 <figure>
                     <img src="images/rafting18_600.jpg" alt="Lead Guide">
                     <figcaption>Lead Guide</figcaption>
@@ -96,6 +113,7 @@
                     <img src="images/rafting18_600.jpg" alt="Trip Coordinator">
                     <figcaption>Trip Coordinator</figcaption>
                 </figure>
+
             </div>
         </section>
 
@@ -105,9 +123,9 @@
         <p>© 2026 White Water Rafting Company ❖ Emmanuel Isaac</p>
 
         <nav class="socialmedia">
-            <a href="#"><img src="images/facebook.svg" alt="Facebook"></a>
-            <a href="#"><img src="images/instagram.svg" alt="Instagram"></a>
-            <a href="#"><img src="images/linkedin.svg" alt="LinkedIn"></a>
+            <a href="#"><img src="images/facebook.svg" alt="Facebook icon"></a>
+            <a href="#"><img src="images/instagram.svg" alt="Instagram icon"></a>
+            <a href="#"><img src="images/linkedin.svg" alt="LinkedIn icon"></a>
         </nav>
     </footer>
 
