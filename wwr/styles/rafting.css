@@ -30,7 +30,7 @@ footer {
     margin: 0 auto;
 }
 
-/* HEADER */
+/* HEADER (GRID) */
 header {
     display: grid;
     grid-template-columns: auto 1fr;
@@ -39,7 +39,7 @@ header {
     padding: 10px;
 }
 
-/* NAV */
+/* NAV (FLEX) */
 nav ul {
     list-style: none;
     display: flex;
@@ -49,29 +49,88 @@ nav ul {
 
 nav a {
     color: white;
-    /* FIXED contrast */
     text-decoration: none;
     font-weight: bold;
 }
 
-/* CONTACT INFO */
-.contact-info {
+/* HERO */
+.hero {
+    position: relative;
+}
+
+.hero img {
+    width: 100%;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: white;
+}
+
+/* CTA */
+.cta {
     text-align: center;
     margin: 20px 0;
 }
 
-/* GRID */
-.contact-grid {
+.cta a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--secondary-color);
+    color: black;
+    text-decoration: none;
+}
+
+/* GRID CONTENT */
+.grid-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
 }
 
-/* MAP */
-.map iframe {
+.grid-content img {
     width: 100%;
-    height: 300px;
-    border: none;
+}
+
+/* NEWSLETTER */
+.newsletter form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+/* TRIPS */
+.trips {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.trip img {
+    width: 100%;
+}
+
+/* TABLE */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th,
+td {
+    border: 1px solid #000;
+    padding: 10px;
+    text-align: center;
+}
+
+/* CONTACT GRID */
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
 }
 
 /* FORM */
@@ -92,7 +151,6 @@ button {
     background-color: var(--primary-color);
     color: white;
     border: none;
-    cursor: pointer;
 }
 
 /* EMPLOYEES */
@@ -102,25 +160,14 @@ button {
     margin-top: 20px;
 }
 
-figure {
-    text-align: center;
-}
-
-figcaption {
-    margin-top: 5px;
-}
-
 /* FOOTER */
 footer {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     margin-top: 20px;
-    border-top: 1px solid #000;
     padding: 10px;
 }
 
-/* SOCIAL */
 .socialmedia {
     display: flex;
     gap: 10px;
