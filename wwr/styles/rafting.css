@@ -1,4 +1,3 @@
-/* VARIABLES */
 :root {
     --primary-color: #0b3d91;
     --secondary-color: #f4a261;
@@ -9,20 +8,18 @@
     --body-font: Arial, sans-serif;
 }
 
-/* RESET */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* BODY */
 body {
     font-family: var(--body-font);
     color: var(--accent1-color);
 }
 
-/* WIDTH */
+/* Layout width */
 header,
 main,
 footer {
@@ -30,7 +27,7 @@ footer {
     margin: 0 auto;
 }
 
-/* HEADER (GRID) */
+/* HEADER GRID */
 header {
     display: grid;
     grid-template-columns: auto 1fr;
@@ -39,7 +36,11 @@ header {
     padding: 10px;
 }
 
-/* NAV (FLEX) */
+header img {
+    width: 80px;
+}
+
+/* NAV FLEX */
 nav ul {
     list-style: none;
     display: flex;
@@ -79,8 +80,8 @@ nav a {
     display: inline-block;
     padding: 10px 20px;
     background-color: var(--secondary-color);
-    color: black;
     text-decoration: none;
+    color: black;
 }
 
 /* GRID CONTENT */
@@ -98,10 +99,9 @@ nav a {
 .newsletter form {
     display: flex;
     flex-direction: column;
-    margin-top: 20px;
 }
 
-/* TRIPS */
+/* TRIPS GRID */
 .trips {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -116,48 +116,13 @@ nav a {
 table {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 20px;
 }
 
 th,
 td {
-    border: 1px solid #000;
+    border: 1px solid black;
     padding: 10px;
     text-align: center;
-}
-
-/* CONTACT GRID */
-.contact-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-}
-
-/* FORM */
-form {
-    display: flex;
-    flex-direction: column;
-}
-
-form input,
-form textarea {
-    padding: 10px;
-    margin-bottom: 10px;
-}
-
-/* BUTTON */
-button {
-    padding: 10px;
-    background-color: var(--primary-color);
-    color: white;
-    border: none;
-}
-
-/* EMPLOYEES */
-.employee-grid {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 20px;
 }
 
 /* FOOTER */
@@ -165,7 +130,6 @@ footer {
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
-    padding: 10px;
 }
 
 .socialmedia {
